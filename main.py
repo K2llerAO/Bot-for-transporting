@@ -1,5 +1,6 @@
 import json
 import logging
+import sqlite3               
 from pathlib import Path
 import discord
 from discord.ext import commands
@@ -230,4 +231,5 @@ async def on_command_error(ctx, error):
 
 if __name__ == "__main__":
     init()
+
     bot.run(TOKEN, log_handler=None)
